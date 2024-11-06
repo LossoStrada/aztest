@@ -5,13 +5,20 @@ metadata:
 spec:
   ingressClassName: ingress-internal
   rules:
-  - host: cloud-sample-prod.cepg-aa.kubepia.net
+  - host: sampleapp1-82265634.cepg-aa.kubepia.net
     http:
       paths:
       - path: /
         backend:
           service:
-            name: cloud-sample
+            name: 82265634
+            port:
+              number: 8080
+        pathType: Prefix
+      - path: /api/
+        backend:
+          service:
+            name: 82265634
             port:
               number: 8080
         pathType: Prefix
