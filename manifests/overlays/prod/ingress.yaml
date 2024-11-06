@@ -11,14 +11,14 @@ spec:
       - path: /
         backend:
           service:
-            name: my-82265634
+            name: "my-82265634"
             port:
               number: 8080
         pathType: Prefix
       - path: /api/
         backend:
           service:
-            name: my-82265634
+            name: "my-82265634"
             port:
               number: 8080
         pathType: Prefix
