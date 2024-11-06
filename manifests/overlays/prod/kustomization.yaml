@@ -13,5 +13,7 @@ kind: Kustomization
 namePrefix: prod-
 namespace: "82265634"
 images:
+- name: cepgstapacr.azurecr.io/82265634
+  newTag: "202411060927"
 - name: cepgstapacr.azurecr.io/cloud-sample
   newTag: "202408120727"
